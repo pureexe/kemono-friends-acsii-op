@@ -5,23 +5,12 @@
 	<title>Welcome to Youkosou Japaripark!</title>
 	<style>
 	#ascii-container-video {
+		font: bold 16.8px/10.38px "Courier New", Courier, monospace;
 		color: #000;
 		clear: left;
-	}
-	@media only screen and (max-width: 1300px) {
-    #ascii-container-video {
-        font: bold 5px/4px "Courier New", Courier, monospace;
-    }
-	}
-	@media only screen and (min-width: 1300px) {
-    #ascii-container-video {
-        font: bold 6px/4px "Courier New", Courier, monospace;
-    }
-	}
-	@media only screen and (min-width: 1400px) {
-    #ascii-container-video {
-        font: bold 8px/5px "Courier New", Courier, monospace;
-    }
+		margin-top:20px;
+		margin-left: 10px;
+		display: block;
 	}
 	body{
 		margin:0px;
@@ -49,6 +38,7 @@
 	</style>
 </head>
 <body>
+	<!--
 	<div class="header">
 	<center><img src="kemono-friends-logo.png" style="max-width:100%;"></center>
 	</div>
@@ -65,7 +55,12 @@
 	</div>
 	<center>
 		<p>Kemono Friends Opening - Youkoso to Japaripark!<br /> Thank for JScii from <a href="https://github.com/EnotionZ/jscii">https://github.com/EnotionZ/jscii</a> </p>
-	</center>
+	</center>-->
+	<video id="jscii-element-video" controls="false" autoplay style="display:none;">
+	<source src="japaripark-480p.mp4" type='video/mp4;' />
+		Your browser does not support video
+	</video>
+	<pre id="ascii-container-video"></pre>
 	<script src="jscii.js"></script>
 	<script>
 		var videoJscii = new Jscii({
